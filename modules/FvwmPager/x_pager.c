@@ -1431,8 +1431,8 @@ XErrorHandler FvwmErrorHandler(Display *dpy, XErrorEvent *event)
  
 void LabelWindow(PagerWindow *t)
 {
-  XGCValues Globalgcv;
-  unsigned long Globalgcm;
+  extern XGCValues Globalgcv;
+  extern unsigned long Globalgcm;
   GC tgc;
 
   if(windowFont == NULL)

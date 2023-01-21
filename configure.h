@@ -1,11 +1,10 @@
-#define FVWMDIR     "/usr/lib/X11/fvwm"
-/* #define FVWMDIR        "/local/homes/dsp/nation/modules"*/
-#define FVWM_ICONDIR   "/usr/include/X11/bitmaps:/usr/include/X11/pixmaps"
-#define FVWMRC         "/usr/lib/X11/fvwm/system.fvwmrc"
+#define FVWMDIR     "/home/cjep/.fvwmlibs"
+#define FVWM_ICONDIR   "/home/cjep/.fvwmlibs/bitmaps:/home/cjep/.fvwmlibs/pixmaps:/usr/X11R7/include/X11/bitmaps:/usr/X11R7/include/X11/pixmaps"
+#define FVWMRC         "/home/cjep/.fvwmlibs/system.fvwmrc"
 
 /* Imake command needed to put modules in desired target location */
 /* Use the second version if it causes grief */
-#define TARGET_DIR BINDIR=FVWMDIR 
+#define TARGET_DIR BINDIR=FVWMDIR
 /* #define TARGET_DIR*/
 
 
@@ -14,8 +13,7 @@
  * If you want to install it in a different directory, uncomment and
  * edit the first line */
 /* #define FVWM_BIN_DIR BINDIR=/local/homes/dsp/nation/bin/4.1.3*/
-#define FVWM_BIN_DIR BINDIR=/usr/bin/X11
-/*#define FVWM_BIN_DIR*/
+#define FVWM_BIN_DIR BINDIR=/home/cjep/bin
 
 /* Compiler over-ride for Imakefiles */
 /* Leave it as shown to get your default compiler */
